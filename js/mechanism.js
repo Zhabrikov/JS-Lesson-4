@@ -321,9 +321,14 @@ function stop(state){
         clearInterval(newChesse);
         clearInterval(newCat);        
         continueAnimating = false; 
-
+        ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
+        ctx.fillRect(0, 0, 800, 600);
+        ctx.fillStyle = 'white';
+        ctx.font = "100px Times";
+        ctx.fillText('ПАУЗА', canvas1.width / 2 - 170, canvas1.height / 2 + 20);
         console.log('СТОП');     
     } else {
+        ctx.fillStyle = 'black';
         continueAnimating = true;
         playGame();    
         

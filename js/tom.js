@@ -18,7 +18,7 @@ function Tom(){
         [Math.floor(Math.random() * canvas1.width), -100], // верх
         [Math.floor(Math.random() * canvas1.width), canvas1.height], //низ
         [-100 ,Math.floor(Math.random() * canvas1.height)], //лево
-        [canvas1.width, Math.floor(Math.random() *canvas1.height)] //право
+        [canvas1.width, Math.floor(Math.random() * canvas1.height)] //право
     ];
 }
 
