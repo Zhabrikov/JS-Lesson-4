@@ -161,10 +161,8 @@ function clickHandler(){
                 if(keysPressed.esc === true){
                     keysPressed.esc = false;
                     stop(keysPressed.esc);
-                } else if(keysPressed.esc === false){
-                    keysPressed.esc = true;
-                    stop(keysPressed.esc);
                 } else {
+                    keysPressed.esc = true;
                     stop(keysPressed.esc);
                 }; 
             break;
