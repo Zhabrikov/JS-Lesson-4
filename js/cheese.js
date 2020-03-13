@@ -17,8 +17,8 @@ function ProductCheese(){
 
 ProductCheese.prototype.createCheese = function(){
     this.cheeseArr.push({
-        x: Math.floor(Math.random() * canvas1.width),
-        y: Math.floor(Math.random() * canvas1.height),
+        x: Math.floor(Math.random() * (canvas1.width - 30)),
+        y: Math.floor(Math.random() * (canvas1.height - 30)),
         w: this.width,
         h: this.height,
         cheeseCount:  cheesei,

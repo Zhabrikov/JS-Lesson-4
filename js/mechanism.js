@@ -60,7 +60,8 @@ function difficultySetting(){
     let gameDifficulty = document.getElementById('mySelect').selectedIndex;
     if(numberOfPlayers === 1){     
         jerry2.jerryImage.src = "./images/jerry2.png";  
-        jerry2.x = canvas1.width / 2 + 200;
+        jerry.x = canvas1.width / 2 + 110;
+        jerry2.x = canvas1.width / 2 - 110;
         jerry2.y = canvas1.height - 100;
     };
     switch (gameDifficulty){
@@ -261,7 +262,7 @@ function updateCanvas1(){
             
       
         if(jerry.isDead(tom.tomArray)){
-            gameOver();console.log(1);
+            gameOver();
         }; 
          
 
