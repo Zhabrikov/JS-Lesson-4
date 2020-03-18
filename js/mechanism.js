@@ -79,8 +79,8 @@ function difficultySetting(){
             timeAppearanceCheese = 2000;
             
             if(numberOfPlayers === 1){        
-                jerry.speedX = 7;
-                jerry.speedY = 7;                
+                jerry2.speedX = 7;
+                jerry2.speedY = 7;                
             };
         break;
         case 1:
@@ -95,8 +95,8 @@ function difficultySetting(){
             timeAppearanceCheese = 2000;
             
             if(numberOfPlayers === 1){        
-                jerry.speedX = 7;
-                jerry.speedY = 7;                
+                jerry2.speedX = 7;
+                jerry2.speedY = 7;                
             };
 
         break;
@@ -112,8 +112,8 @@ function difficultySetting(){
             timeAppearanceCheese = 1000;
             
             if(numberOfPlayers === 1){        
-                jerry.speedX = 10;
-                jerry.speedY = 10;                
+                jerry2.speedX = 10;
+                jerry2.speedY = 10;                
             };          
         break;
     };
@@ -243,9 +243,7 @@ function updateCanvas1(){
             if(keysPressed[edit] && !keysPressed.esc){
                 jerry.move(edit);
             };
-        });
-           
-
+        }); 
 
         ctx.drawImage(backgroundImg, 0, 0);
         ctx.font = "15px Times";
@@ -254,17 +252,12 @@ function updateCanvas1(){
         jerry.draw();   
         tom.draw();
         tom.move();
-
-        cheese.draw();
-        
-        mouseEat(jerry);
-            
-            
+        cheese.draw();        
+        mouseEat(jerry);    
       
         if(jerry.isDead(tom.tomArray)){
             gameOver();
-        }; 
-         
+        };  
 
         if(numberOfPlayers === 1 && !jerry.isDead(tom.tomArray)){              
 
@@ -308,8 +301,7 @@ function updateCanvas1(){
     
 };
 
-function playGame(){
-    
+function playGame(){    
     updateCanvas1();  
     addingItems(); 
     clickHandler();    
@@ -329,8 +321,7 @@ function stop(state){
     } else {
         ctx.fillStyle = 'black';
         continueAnimating = true;
-        playGame();    
-        
+        playGame();            
         console.log('ПОЕХАЛИ');
     };   
 };

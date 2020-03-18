@@ -1,5 +1,3 @@
-
-
 function soundStart(sound, autoplay, vol) {
     sound.play();
     sound.loop = autoplay;

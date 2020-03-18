@@ -1,5 +1,8 @@
+body{
+    text-align: center;
+}
 #canvas1{
-    border: 2px solid red;
+    border: 2px solid green;
     background-color: #fff;
     border-radius: 20px;
 }
